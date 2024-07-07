@@ -44,12 +44,11 @@ def execute_tests(test_code, function_code, input_image_path, output_image_path)
         # Replace placeholders in the test code with actual paths
         modified_test_code = (
             test_code.replace('path/to/actual_input_image.jpg', input_image_path)
-            .replace('path/to/output_image.jpg', output_image_path)
+            .replace('path/to/actual_output_image.jpg', output_image_path)
         )
         
         # Combine the function code and modified test code
         combined_code = (
-            "from vision_agent.tools import load_image, grounding_dino, overlay_bounding_boxes, save_image\n\n" +
             function_code + "\n\n" +
             modified_test_code
         )
@@ -155,3 +154,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
