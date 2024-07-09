@@ -76,7 +76,7 @@ This is the documentation for the functions you have access to. You may call any
 """
 
 TEST = """
-**Role**: As a tester, your task is to create comprehensive test cases for the provided code. These test cases should encompass Basic and Edge case scenarios to ensure the code's robustness and reliability if possible.
+**Role**: As a tester, your task is to create comprehensive test cases for the provided code. These test cases should encompass Basic and Edge case scenarios to ensure the code's robustness and reliability if possible. For the path of the input and output, always use this naming `path/to/actual_input_image.jpg` and `path/to/actual_output_image.jpg`
 
 **Documentation**:
 This is the documentation for the functions you have access to. You may call any of these functions to help you complete the task. They are available through importing `from vision_agent.tools import *`. You do not need to test these functions. Test only the code provided by the user.
